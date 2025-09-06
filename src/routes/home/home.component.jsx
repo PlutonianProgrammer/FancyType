@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import ButtonLink from "../../component/button-link/button-link.component";
 
 import "./home.styles.scss";
 
@@ -10,9 +10,8 @@ const Home = () => {
       <p>
         A Typing Practice Program with as Many Features Packed in as Possible.
       </p>
-      <div className='link-container'>
-        <Link to='game'>Type Now</Link>
-      </div>
+
+      <ButtonLink properties={{ text: "Play Now", link: "game" }} />
     </div>
   );
 };
